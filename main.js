@@ -1,7 +1,89 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const onlyOdds = function(nums) {
+  return nums.filter(function(num){
+    return num % 2 === 1 
+  })
+}
 
+const onlyEvens = function(nums) {
+  return nums.filter(function(num){
+    return num % 2 === 0
+  })
+}
+
+const shortNamesOnly = function(name) {
+  return name.filter(function(str){
+    return str.length < 7
+  })
+}
+
+const sNames = function(name) {
+  return name.filter(function(str){
+    return str.includes('S')
+  })
+}
+
+const tripleAll = function(nums) {
+  return nums.map(function(num){
+    return num * 3
+  })
+}
+
+// const negativeValues = function(nums) {
+//   return nums.map((num) => num > 0 ? num * -1 : num)
+// }
+const negativeValues = function(nums) {
+  return nums.map(function(num){
+    if (num > 0) {
+      return num *-1
+    } else{
+      return num
+    }
+  })
+}
+
+const questionings = function(strs) {
+  return strs.map(function(str){
+    return str + '?'
+  })
+}
+
+const changeToInitials = function(names) {
+  return names.map(function(name){
+    return name[0] + name[name.indexOf(' ') + 1]
+  })
+}
+
+const doubleEven = function(nums) {
+  return nums.map(function(num){
+    if (num % 2 === 0) {
+      return num * 2
+    } else{
+      return num
+    }
+  })
+}
+
+const titleCaseNames = function(names) {
+  return names.map(function(name){
+    return name[0].toUpperCase() + name.slice(1).toLowerCase()
+  })
+}
+
+const doubleEveryOther = function(nums, index) {
+  return nums.map(function(num) {
+    
+    return num * 2
+
+
+    
+  })
+}
+
+  
+  
 
 
 /*********************************
